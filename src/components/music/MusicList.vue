@@ -1,17 +1,17 @@
 <template>
-    <ul class="readList commonFbox">
-          <ReadListItem v-for="item in list" v-bind:key="item.name" v-bind:item2="item"/>
+    <ul class="musicList commonFbox">
+          <MusicListItem v-for="item in list" v-bind:key="item.name" v-bind:item2="item"/>
     </ul>
 </template>
 <script>
-import ReadListItem from './ReadListItem.vue'
+import MusicListItem from './MusicListItem.vue'
     export default{
-        name:'ReadList',
+        name:'MusicList',
         props:{
             list:Array,
         },
         components:{
-            ReadListItem,
+            MusicListItem,
         },
         data(){
             return{
@@ -21,7 +21,7 @@ import ReadListItem from './ReadListItem.vue'
     }
 </script>
 <style scoped>
-.readList{
+.musicList{
     list-style:none;
     width: 100%;
 }  

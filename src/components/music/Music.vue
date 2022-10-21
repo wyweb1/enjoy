@@ -1,21 +1,22 @@
 <template>
-    <div id="read" class="commonFbox">
+    <div id="music" class="commonFbox">
         <ShowHeadTitle v-bind:title="title" v-bind:classStyle="classObj"/>
-        <ReadList v-bind:list="readData" />
+        <MusicList v-bind:list="readData" />
+    
     </div>
 </template>
 <script>
 import ShowHeadTitle from '../ShowHeadTitle.vue'
-import ReadList from '../read/ReadList.vue'
+import MusicList from '../music/MusicList.vue'
     export default{
         name:'Read',
         components:{
             ShowHeadTitle,
-            ReadList,
+            MusicList,
         },
         data(){
             return{
-                title:'read',
+                title:'music',
                 classObj:{'color':'#336666','background':'#fff'},//该组件标题样式
                 readData:[
                     {name:'xusanguanmaixueji',img:'/static/image/read/7.png',info:'sad a life',},
@@ -31,7 +32,7 @@ import ReadList from '../read/ReadList.vue'
     }
 </script>
 <style scoped>
-    #read{
+    #music{
         margin-bottom: 200px;
     }
 </style>

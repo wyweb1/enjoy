@@ -1,7 +1,7 @@
 <!-- 不含有底部tab切换的其他页面展示的祖父组件 -->
 
 <template>
-  <div id="app">
+  <div id="app" class="commonFbox">
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
   </div>
@@ -22,6 +22,7 @@ export default {
   -ms-box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* font-size: 0; */
   font-family: "思源黑体 CN" ;
 }
 input,textarea{outline: none;}
@@ -33,11 +34,13 @@ a{text-decoration: none;}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow: hidden;
+ margin: 0 auto;
   /* margin-top: 60px; */
 }
 
 .commonFbox{
-  width: 750px;
+  width: 100%;
 }
 .commonFlex{
   display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
