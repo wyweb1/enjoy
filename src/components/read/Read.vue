@@ -18,9 +18,9 @@ import ReadList from '../read/ReadList.vue'
                 title:'read',
                 classObj:{'color':'#336666','background':'#fff'},//该组件标题样式
                 readData:[
-                    {name:'xusanguanmaixueji',img:'/static/image/read/7.png',info:'sad a life',},
-                    {name:'moonandsix',img:'/static/image/read/4.jpg',info:'sad a life',},
-                    {name:'glass',img:'/static/image/read/1.jpg',info:'sad a life',},
+                    {name:'xusanguanmaixueji',img:'/static/image/read/7.png',info:'sad a life',id:1},
+                    {name:'moonandsix',img:'/static/image/read/4.jpg',info:'sad a life',id:2},
+                    {name:'glass',img:'/static/image/read/1.jpg',info:'sad a life',id:3},
                 ],
 
             }

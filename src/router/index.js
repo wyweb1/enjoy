@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import IndexPage from '@/components/IndexPage'
 import Read from '@/components/read/Read'
 import Music from '@/components/music/Music'
+import ReadDetail from '@/components/read/ReadDetail'
 
 Vue.use(Router)
 //获取原型对象上的push函数
@@ -25,6 +26,12 @@ export default new Router({
         {path:'music',component:Music},
       ]
     },
+    {
+      path:'/readdetail',
+      name:'ReadDetail',
+      component:ReadDetail,
+
+    }
     
   ]
 })

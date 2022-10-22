@@ -1,5 +1,5 @@
 <template>
-    <li class="readListItem commonFlex">
+    <li class="readListItem commonFlex" @click="$router.push({path:'/readdetail',query:{id:item2.id}})">
         <div class="picBox">
             <img v-bind:src="item2.img" alt="">
         </div>
