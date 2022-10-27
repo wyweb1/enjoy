@@ -14,6 +14,7 @@ export default {
 </script>
 
 <style>
+/* 全局公共样式存放处 */
 *{
   box-sizing: border-box;
   -moz-box-sizing: border-box;

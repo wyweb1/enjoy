@@ -7,7 +7,13 @@
             <div class="picBox"><img v-bind:src="book.mainPic" alt=""></div>
             <div class="content">
                 <p class="name">{{book.name}}</p>
-                <p class="author">作者：{{book.author}}</p>
+                <p class="author">author：{{book.author}}</p>
+                <div class="action commonFlex">
+                    <div class="downLoad">read</div>
+                    <div class="downLoad" @click="goDownLoad">txt</div>
+                    <a v-bind:href="['/static/book/'+id+'.txt']"  v-bind:download="book.name">txt2</a>
+                </div>
+                
             </div>
         </div>
         <!-- info -->
@@ -31,9 +37,18 @@ import {store} from '../../store/store'
         data(){
             return{
                 title:'detail',
-                id:-1,//当前read id
+                id:-1,//当前read id,没点击进入前设置为-1
                 book:[],//该书信息
                 classObj:{'color':'#336666','background':'rgba(220,235,225,0.5)'},//该组件标题样式
+            }
+        },
+        methods:{
+            goDownLoad(){
+                //后期需要在手机上测试是不是下载到手机内存文件里了
+                 //方法一  
+                window.location.href = `/static/book/${this.id}.txt`;
+                //方法二
+               
             }
         },
         created(){
@@ -41,7 +56,10 @@ import {store} from '../../store/store'
             let that = this;
             let id= that.$route.query.id;
            
-           this.book =  store.findReadId(id);
+            this.book =  store.findReadId(id);
+            //设置id
+            this.id = id;
+            
        
         }
 
@@ -89,7 +107,19 @@ import {store} from '../../store/store'
     text-align: left;
  }
 
-
+.action{
+    justify-content: start;
+    margin-top: 40px;
+}
+.action div,.action a{
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    margin-right: 20px;
+    padding: 10px;
+    background: #e6e6e6;
+    display:inline-block;
+}
 
 
 </style>
