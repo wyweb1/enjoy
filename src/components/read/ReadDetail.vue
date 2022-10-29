@@ -9,7 +9,7 @@
                 <p class="name">{{book.name}}</p>
                 <p class="author">author：{{book.author}}</p>
                 <div class="action commonFlex">
-                    <div class="downLoad">read</div>
+                    <div class="downLoad" @click="$router.push({path:'/readonline',query:{id}})" >read</div>
                     <div class="downLoad" @click="goDownLoad">txt</div>
                     <a v-bind:href="['/static/book/'+id+'.txt']"  v-bind:download="book.name">txt2</a>
                 </div>

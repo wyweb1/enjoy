@@ -1,4 +1,6 @@
 // 简单状态管理模式store--全局共享数据或者方法存放处
+
+/** download file txt and  online txt not same*/
 export const store={
     state:{//公共数据
         read:{
