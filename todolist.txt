@@ -2,3 +2,4 @@
 2.music play on online
 3.can set  font  txt of line-hieght and size
 4.content 自动创建txt个式的文件？或者文件转化这样源文件就只需要一份文章了，不占内存，但是转译速度不知道漫不慢
+5.music play :music存 到static文件夹下

@@ -6,7 +6,7 @@ import Read from '@/components/read/Read'
 import Music from '@/components/music/Music'
 import ReadDetail from '@/components/read/ReadDetail'
 import ReadOnlineBook from '@/components/read/ReadOnlineBook'
-
+import MusicDetail from '@/components/music/MusicDetail'
 
 
 Vue.use(Router)
@@ -38,7 +38,12 @@ export default new Router({
       path:'/readonline',
       name:'ReadOnlineBook',
       component:ReadOnlineBook,
-    }
+    },
+    {
+      path:'/musicdetail',
+      name:'MusicDetail',
+      component:MusicDetail,
+    },
     
   ]
 })

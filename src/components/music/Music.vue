@@ -1,7 +1,7 @@
 <template>
     <div id="music" class="commonFbox">
         <ShowHeadTitle v-bind:title="title" v-bind:classStyle="classObj"/>
-        <MusicList v-bind:list="readData" />
+        <MusicList v-bind:list="musicData" />
     
     </div>
 </template>
@@ -18,10 +18,10 @@ import MusicList from '../music/MusicList.vue'
             return{
                 title:'music',
                 classObj:{'color':'#336666','background':'#fff'},//该组件标题样式
-                readData:[
-                    {name:'xusanguanmaixueji',img:'/static/image/read/7.png',info:'sad a life',},
-                    {name:'moonandsix',img:'/static/image/read/4.jpg',info:'sad a life',},
-                    {name:'glass',img:'/static/image/read/1.jpg',info:'sad a life',},
+                musicData:[
+                    {id:1,name:'lemon',img:'/static/image/read/7.png',info:'sad a life',},
+                    {id:2,name:'moonandsix',img:'/static/image/read/4.jpg',info:'sad a life',},
+                    {id:3,bname:'glass',img:'/static/image/read/1.jpg',info:'sad a life',},
                 ],
 
             }
