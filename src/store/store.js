@@ -283,8 +283,31 @@ export const store={
                 },
             ]
         },
-        musicData:{},
-        // data:{
+        music:{
+            list:[
+                {
+                    id:1,
+                    name:'lemon',
+                    img:'/static/image/music/musicpic.png',
+                    info:'sad a life',
+                },
+    
+                {
+                    id:2,
+                    name:'moonandsix',
+                    img:'/static/image/read/4.jpg',
+                    info:'sad a life',
+                },
+    
+                {
+                    id:3,
+                    bname:'glass',
+                    img:'/static/image/read/1.jpg',
+                    info:'sad a life',
+                },
+            ]
+        }
+,        // data:{
         //     read:{
         //         list:[
         //             {id:1,name:'人间测试',author:'wu',info:'测试',mainPic:'/static/image/read/7.png'},
@@ -298,6 +321,12 @@ export const store={
     // 公共方法
     findReadId(id){ //根据read id查找对应的数据并返回
         return  this.state.read.list.find(function(item){
+                return item.id == id;
+            })
+       
+    },
+    findMusicId(id){ //根据read id查找对应的数据并返回
+        return  this.state.music.list.find(function(item){
                 return item.id == id;
             })
        

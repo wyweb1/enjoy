@@ -19,7 +19,7 @@ import MusicList from '../music/MusicList.vue'
                 title:'music',
                 classObj:{'color':'#336666','background':'#fff'},//该组件标题样式
                 musicData:[
-                    {id:1,name:'lemon',img:'/static/image/read/7.png',info:'sad a life',},
+                    {id:1,name:'lemon',img:'/static/image/music/musicpic.png',info:'sad a life',},
                     {id:2,name:'moonandsix',img:'/static/image/read/4.jpg',info:'sad a life',},
                     {id:3,bname:'glass',img:'/static/image/read/1.jpg',info:'sad a life',},
                 ],
