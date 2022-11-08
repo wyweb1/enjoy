@@ -26,7 +26,7 @@
         
             <audio  
                 class='music' 
-                src="http://downsc.chinaz.net/Files/DownLoad/sound1/201906/11582.mp3" 
+                src="/static/music/ALisaSavageLove.mp3" 
                 controls="controls" 
                 autoplay
                 @ended="onOverAudio"
@@ -92,8 +92,10 @@ import {store} from '../../store/store'
 </script>
 <style scoped>
 .musicDetail{
-    height: 100vh;
-    width: 100%;
+    height: 900px;
+    width:100%;
+    
+
     background: rgba(0,0,0,0.1);
 }
 .music{
