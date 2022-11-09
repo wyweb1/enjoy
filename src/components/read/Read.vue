@@ -2,6 +2,10 @@
     <div id="read" class="commonFbox">
         <ShowHeadTitle v-bind:title="title" v-bind:classStyle="classObj"/>
         <ReadList v-bind:list="readData" />
+        <div class="readPulishBox">
+            <img class="readPulish" src="/static/image/tab/tab3.png" alt="">
+        </div>
+        
     </div>
 </template>
 <script>
@@ -33,5 +37,23 @@ import ReadList from '../read/ReadList.vue'
 <style scoped>
     #read{
         margin-bottom: 200px;
+        position: relative;
+        
+    }
+    .readPulishBox{
+        width: 88px;
+        height: 88px;
+        position: absolute;
+        top:0;
+        right: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .readPulish{
+        width: 40px;
+        height: 40px;
+       display: block;
+       /* margin: auto; */
     }
 </style>

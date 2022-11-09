@@ -33,7 +33,8 @@
     list-style: none;
     width:100%;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 60px;
+    
     align-items: center;
     overflow: hidden;
     position: fixed;
@@ -59,14 +60,7 @@
 .footerTab {}
 .footerTab {}
 .footerTab {}
-.footerTab {}
-.footerTab {}
-.footerTab {}
-.footerTab {}
-.footerTab {}
-.footerTab {}
-.footerTab {}
-.footerTab {}
+
 
 
 </style>

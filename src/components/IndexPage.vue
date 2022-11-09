@@ -33,13 +33,13 @@ import FooterTab from './FooterTab.vue'
                         path:'music',
                         isact:false,
                     },
-                    {
-                        title:'publish',
-                        unactpic:'/static/image/tab/tab3.png',
-                        actpic:'/static/image/tab/tab3_act.png',
-                        path:'homeset',
-                        isact:false,
-                    },
+                    // {
+                    //     title:'publish',
+                    //     unactpic:'/static/image/tab/tab3.png',
+                    //     actpic:'/static/image/tab/tab3_act.png',
+                    //     path:'homeset',
+                    //     isact:false,
+                    // },
                     {
                         title:'user',
                         unactpic:'/static/image/tab/tab4.png',
