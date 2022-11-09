@@ -99,13 +99,13 @@ import {store} from '../../store/store'
     background: rgba(0,0,0,0.1);
 }
 .music{
-    width: 500px;
-    height: 100px;
+    width: 5rem;
+    height: 1rem;
     margin:0 auto;
 }
 .animateRevolve {
-    width: 500px;
-    height: 500px;
+    width: 5rem;
+    height: 5rem;
     background: rgba(0,0,0,0.1);
     margin: 0 auto;
     border-radius: 10px;
@@ -123,8 +123,8 @@ import {store} from '../../store/store'
     align-items: center;
 }
 .animateRevolve .centerBox{
-    width: 300px;
-    height: 300px;
+    width: 3rem;
+    height: 3rem;
     margin:  auto;
     background: url('/static/image/music/musicpic.png') no-repeat;
     background-size: cover;
@@ -136,9 +136,9 @@ import {store} from '../../store/store'
 }
 .animateRevolve .centerBox .center{
     background: #fff;
-    border: 4px solid #cfd0c7;
-    width: 100px;
-    height: 100px;
+    border: 0.04rem solid #cfd0c7;
+    width:1rem;
+    height:1rem;
     display: block;
     border-radius: 50%;
 }
@@ -170,18 +170,18 @@ import {store} from '../../store/store'
     bottom: 0;
 }
 .playerUI .playerBlock{
-    width: 100px;
+    width: 1rem;
     height: auto;
     position: absolute;
-    right: 41px;
-    top: 10px;
+    right:0.41rem;
+    top: 0.1rem;
 }
 .playerUI .playerLine {
-    width: 100px;
+    width: 1rem;
     height: auto;
     position: absolute;
-    right: 122px;
-    bottom: 85px;
+    right: 1.22rem;
+    bottom: 0.85rem;
 
     transform-origin:87% 5% ;
    transition: all 1s linear;
@@ -195,24 +195,24 @@ import {store} from '../../store/store'
 .otherBox{
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 0.5rem;
 }
 .otherBox .name{
-    margin-top: 20px;
-    font-size: 40px;
+    margin-top:0.2rem;
+    font-size: 0.4rem;
     text-align: left;
  
 }
 .otherBox .heart{
-    width: 50px;
-    height: 50px;
+    width: 0.5rem;
+    height: 0.5rem;
     overflow: hidden;
 }
 .otherBox .heart>span{
     display: block;
    
-    width: 50px; 
-    height: 50px;
+    width: 0.5rem; 
+    height: 0.5rem;
 }
 .otherBox .heartFree{
     background: url('/static/image/music/heart.png') no-repeat;
