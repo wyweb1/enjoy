@@ -2,7 +2,7 @@
     <div id="read" class="commonFbox">
         <ShowHeadTitle v-bind:title="title" v-bind:classStyle="classObj"/>
         <ReadList v-bind:list="readData" />
-        <div class="readPulishBox">
+        <div class="readPulishBox" @click="$router.push('/readpublish')">
             <img class="readPulish" src="/static/image/tab/tab3.png" alt="">
         </div>
         
@@ -11,6 +11,7 @@
 <script>
 import ShowHeadTitle from '../ShowHeadTitle.vue'
 import ReadList from '../read/ReadList.vue'
+import {store} from '../../store/store'
     export default{
         name:'Read',
         components:{
@@ -31,6 +32,9 @@ import ReadList from '../read/ReadList.vue'
         },
         methods:{
 
+        },
+        created(){
+            let data = store
         }
     }
 </script>

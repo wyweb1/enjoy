@@ -1,12 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
+
 import IndexPage from '@/components/IndexPage'
-import Read from '@/components/read/Read'
 import Music from '@/components/music/Music'
+import MusicDetail from '@/components/music/MusicDetail'
+
+import Read from '@/components/read/Read'
 import ReadDetail from '@/components/read/ReadDetail'
 import ReadOnlineBook from '@/components/read/ReadOnlineBook'
-import MusicDetail from '@/components/music/MusicDetail'
+import ReadPublish from '@/components/read/ReadPublish'
+
+
 
 
 Vue.use(Router)
@@ -38,6 +43,11 @@ export default new Router({
       path:'/readonline',
       name:'ReadOnlineBook',
       component:ReadOnlineBook,
+    },
+    {
+      path:'/readpublish',
+      name:'ReadPublish',
+      component:ReadPublish,
     },
     {
       path:'/musicdetail',
