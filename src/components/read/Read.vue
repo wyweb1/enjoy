@@ -22,19 +22,30 @@ import {store} from '../../store/store'
             return{
                 title:'read',
                 classObj:{'color':'#336666','background':'#fff'},//该组件标题样式
-                readData:[//不确定和store里的read-list是不是一个表，先不用store覆盖
-                    {name:'xusanguanmaixueji',img:'/static/image/read/7.png',info:'sad a life',id:1},
-                    {name:'moonandsix',img:'/static/image/read/4.jpg',info:'sad a life',id:2},
-                    {name:'glass',img:'/static/image/read/1.jpg',info:'sad a life',id:3},
-                ],
+                // readData:[//不确定和store里的read-list是不是一个表，先不用store覆盖
+                //     {name:'xusanguanmaixueji',img:'/static/image/read/7.png',info:'sad a life',id:1},
+                //     {name:'moonandsix',img:'/static/image/read/4.jpg',info:'sad a life',id:2},
+                //     {name:'glass',img:'/static/image/read/1.jpg',info:'sad a life',id:3},
+                // ],
+                readData:[],
 
             }
         },
         methods:{
 
         },
+        beforeMount(){//挂在开始之前被调用？
+            //初始化数据
+            let data = store.state.read.list;
+            this.readData=data;
+            console.log(1)
+        },
+        mounted(){
+        // 挂在完成，也就是模板中的HTML渲染到HTML页面中，此时一般可以做一些ajax操作，mounted只会执行一次。
+    
+    },
         created(){
-            let data = store
+         
         }
     }
 </script>

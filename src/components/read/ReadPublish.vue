@@ -6,11 +6,11 @@
         </div>
        <div class="content">
         <ul class="formlist">
-            <li><input type="text" placeholder="book name..."></li>
-            <li><input type="text" placeholder="author..."></li>
+            <li><input type="text" v-model="name" placeholder="book name..."></li>
+            <li><input type="text" v-model="author" placeholder="author..."></li>
         </ul>
         <div class="txt">
-           <textarea placeholder="say you want..." name="" id="" cols="30" rows="10"></textarea>
+           <textarea v-model="info" placeholder="say you want..." name="" id="" cols="30" rows="10"></textarea>
         </div>
         <van-uploader preview-size="200px" v-model="fileList"  :after-read="afterRead" :max-count="1" multiple/>
        </div>
@@ -20,6 +20,7 @@
 </template>
 <script>
 import ShowHeadTitle from '../ShowHeadTitle.vue'
+import {store} from '../../store/store'
     export default{
         name:'ReadPublish',
         components:{
@@ -27,6 +28,10 @@ import ShowHeadTitle from '../ShowHeadTitle.vue'
         },
         data(){
             return{
+                name:'',
+                author:'',
+                info:'',
+
                 classObj:{'color':'#336666','background':'#f5f5f5'},//该组件标题样式
                 
                 fileList: [ //已上传的文件列表
@@ -64,7 +69,17 @@ import ShowHeadTitle from '../ShowHeadTitle.vue'
             addReadItem(){
                 // 获取本页面需要提交的数据 图片存储在数组里，字段 name 简介
                 let list = this.fileList;
+                let urlitem = list[0].content;//获取图片编码，即图片本身！！
                 console.log(list,'000')
+                console.log(urlitem,'0ww00')
+                let name = this.name;
+                let author = this.author;
+                let info = this.info;
+
+                let obj = {name,author,info,img:urlitem}
+                store.addReadItem(obj);
+                this.$router.push('/read');
+               
             }
         }
 
@@ -134,6 +149,7 @@ import ShowHeadTitle from '../ShowHeadTitle.vue'
 
     input{
         border: none;
+    
     }
     
 </style>

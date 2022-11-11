@@ -4,7 +4,7 @@
       
         <!-- header -->
         <div class="info commonFlex">
-            <div class="picBox"><img v-bind:src="book.mainPic" alt=""></div>
+            <div class="picBox"><img v-bind:src="book.img" alt=""></div>
             <div class="content">
                 <p class="name">{{book.name}}</p>
                 <p class="author">author：{{book.author}}</p>

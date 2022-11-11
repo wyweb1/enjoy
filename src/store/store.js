@@ -7,18 +7,18 @@ export const store={
             list:[
                 {
                     id:1,
-                    name:'人间测试',
+                    name:'xusanguanmaixueji',
                     author:'wu',
                     info:'测测试测试测试测试测试测试试',
-                    mainPic:'/static/image/read/7.png',
+                    img:'/static/image/read/7.png',
                     content:'hhhhhhhhhhh',
                 },
                 {
                     id:2,
-                    name:'测试2',
+                    name:'moonandsix',
                     author:'wu',
                     info:'测测试测试测试测试测试测试试',
-                    mainPic:'/static/image/read/4.jpg',
+                    img:'/static/image/read/4.jpg',
                     content:`湖南农民运动考察报告
 
                     （一九二七年三月）
@@ -275,10 +275,10 @@ export const store={
                 },
                 {
                     id:3,
-                    name:'测试3',
+                    name:'glass',
                     author:'wu',
                     info:'测测试测试测试测试测试测试试',
-                    mainPic:'/static/image/read/1.jpg',
+                    img:'/static/image/read/1.jpg',
                     content:'hhhhhhhhhhh',
                 },
             ]
@@ -310,7 +310,7 @@ export const store={
 ,        // data:{
         //     read:{
         //         list:[
-        //             {id:1,name:'人间测试',author:'wu',info:'测试',mainPic:'/static/image/read/7.png'},
+        //             {id:1,name:'人间测试',author:'wu',info:'测试',img:'/static/image/read/7.png'},
         //         ]
         //     },
         //     music:[],
@@ -330,5 +330,9 @@ export const store={
                 return item.id == id;
             })
        
-    }
+    },
+
+    addReadItem(obj){
+        this.state.read.list.push(obj);
+    },
 }
